@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+command -v nvim >/dev/null && alias vim="nvim" vimdiff="nvim -d"
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -v" \
+	mkd="mkdir -pv" \
+	ffmpeg="ffmpeg -hide_banner"
+
+# Colorize commands when possible.
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	grep="grep --color=auto" \
+	diff="diff --color=auto" \
+	ccat="highlight --out-format=ansi"
+
+# These common commands are just too long! Abbreviate them.
+alias \
+	ka="killall" \
+	sdn="sudo shutdown -h now" \
+	f="$FILE" \
+	e="$EDITOR" \
+	v="$EDITOR" \
+	xi="sudo xbps-install" \
+	xr="sudo xbps-remove -R" \
+	xq="xbps-query"
+
+# This alias is important. It enables the `pauseallmpv` command.
+alias mpv="mpv --input-ipc-server=/tmp/mpvsoc$(date +%s)"
+
+# Some other stuff
+alias \
+	ref="shortcuts >/dev/null; source ~/.config/shortcutrc" \
