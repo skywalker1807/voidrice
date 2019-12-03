@@ -17,10 +17,8 @@ export FILE="vifm"
 export LESSHISTFILE="-"
 export INPUTRC="$HOME/.config/inputrc"
 export ZDOTDIR="$HOME/.config/zsh"
-export PASSWORD_STORE_DIR="$HOME/.local/share/password-store"
 
 # Other program settings:
-export DICS="/usr/share/stardict/dic/"
 export SUDO_ASKPASS="$HOME/.local/bin/dmenupass"
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export LESS=-R
