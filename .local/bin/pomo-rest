@@ -1,0 +1,2 @@
+#!/bin/sh
+snore 10m && notify-send -u normal "Start working!"
