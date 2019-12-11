@@ -33,3 +33,19 @@ G,https://github.com/lukesmithxyz/dmenu.git,"runs commands and provides a UI for
 G,https://github.com/skywalker1807/dwm.git,"is the window manager."
 G,https://github.com/LukeSmithxyz/st.git,"is Luke's custom build of suckless's terminal emulator."
 G,https://github.com/clamiax/snore.git,"simple visual Timer used for pomodoro"
+,vifm,is the filemanager every-body likes.
+,bc,is used for a dropdown calculator.
+,calcurse,is a lightweight terminal-based calendar.
+,sxiv,is a minimalist image viewer.
+,ffmpeg,can record and splice video and audio on the command line.
+,mpd,is a lightweight music daemon.
+,mpc,is a terminal interface for mpd.
+,mpv,is the patrician's choice video player.
+,ncmpcpp,a ncurses interface for music with multiple formats and a powerful tag editor.
+,alsa-utils,is an audio interface for ALSA.
+,youtube-dl,can download any YouTube video (or playlist or channel) when given the link.
+,zathura,is a pdf viewer with vim-like bindings.
+,zathura-pdf-mupdf,allows mupdf pdf compatibility in zathura.
+,python-ueberzug,generates image previews in ranger and other terminal programs.
+,poppler,manipulates .pdfs and gives .pdf previews and other .pdf functions.
+,mediainfo,shows audio and video information.
