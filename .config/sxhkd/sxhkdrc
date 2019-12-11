@@ -8,10 +8,8 @@
 # The b key on the bottom row (hides the bar in either case)
 
 # Basic binds
-super + Return
+super + return
 	$TERMINAL
-super + shift + q
-	kill -9 `xdotool getwindowfocus getwindowpid`
 super + d
 	dmenu_run
 super + r
@@ -28,3 +26,55 @@ super + shift + a
 	$TERMINAL -e alsamixer; pkill -RTMIN+10 $STATUSBAR
 super + shift + c
 	mpv --no-osc --no-input-default-bindings --input-conf=/dev/null --title='mpvfloat' /dev/video0
+super + w
+	$BROWSER
+
+super + shift + x
+	prompt "Shutdown computer?" "sudo -A shutdown -h now"
+super + shift + BackSpace
+	prompt "Reboot computer?" "sudo -A reboot"
+super + shift + Escape
+	prompt 'Leave Xorg?' 'killall Xorg'
+
+# Audiokeys
+super + p
+	mpc toggle
+super + shift + p
+	mpc pause; pauseallmpv
+# Changes to next/previous tracks
+super + {comma,period}
+	mpc {prev,next}
+# Restart track
+super + shift + less
+	mpc seek 0%
+# Seek foward in song
+super + {_,shift +} bracketright
+	mpc seek +{10,120}
+# Seek backward in song
+super + {_,shift +} bracketleft
+	mpc seek -{10,120}
+# Increase volume
+super {_,shift +} + plus
+	amixer sset Master {5,15}%+; pkill -RTMIN+10 $STATUSBAR
+# Decrease volume
+super {_,shift +} + minus
+	amixer sset Master {5,15}%-; pkill -RTMIN+10 $STATUSBAR
+super + shift + m
+	amixer sset Master toggle; pkill -RTMIN+10 $STATUSBAR
+
+# Function keys
+# Show readme
+super + F1
+	groff -mom $HOME/.local/share/larbs/readme.mom -Tpdf | zathura -
+# F2 restarts either dwm or i3 and is bound in each.
+# Hibernate
+super + F3
+	displayselect
+super + F4
+	prompt 'Hibernate computer?' 'sudo -A zzz -Z'
+# sync email
+super + F8
+	mailsync
+# Mount a USB drive or Android device
+super + {F9,F10}
+	{dmenumount,dmenuumount}
