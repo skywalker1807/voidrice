@@ -41,6 +41,7 @@ G,https://github.com/clamiax/snore.git,"simple visual Timer used for pomodoro"
 ,mpd,is a lightweight music daemon.
 ,mpc,is a terminal interface for mpd.
 ,mpv,is the patrician's choice video player.
+,sc-im,is an Excel-like terminal spreadsheet manager.
 ,ncmpcpp,a ncurses interface for music with multiple formats and a powerful tag editor.
 ,alsa-utils,is an audio interface for ALSA.
 ,youtube-dl,can download any YouTube video (or playlist or channel) when given the link.
