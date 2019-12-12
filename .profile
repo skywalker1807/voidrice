@@ -12,6 +12,7 @@ export EDITOR="nvim"
 export TERMINAL="st"
 export READER="zathura"
 export FILE="vifm"
+export STATUSBAR="${LARBSWM}blocks"
 
 # ~/ Clean-up:
 export LESSHISTFILE="-"
@@ -31,7 +32,7 @@ export LESS_TERMCAP_us="$(printf '%b' '[1;32m')"
 export LESS_TERMCAP_ue="$(printf '%b' '[0m')"
 
 
-# mpd >/dev/null 2>&1 &
+mpd >/dev/null 2>&1 &
 
 [ ! -f ~/.config/shortcutrc ] && shortcuts >/dev/null 2>&1
 
