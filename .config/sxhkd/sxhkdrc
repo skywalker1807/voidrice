@@ -8,7 +8,7 @@
 # The b key on the bottom row (hides the bar in either case)
 
 # Basic binds
-super + return
+super + Return
 	$TERMINAL
 super + d
 	dmenu_run
